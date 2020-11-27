@@ -10,6 +10,13 @@
             font-family: Arial, Helvetica, sans-serif;
         }
     </style>
+    <script>
+        var req = new XMLHttpRequest();
+        req.open('GET', document.location, false);
+        req.send(null);
+        var headers = req.getAllResponseHeaders().toLowerCase();
+        alert(headers);
+    </script>
 </head>
 
 <body>
@@ -22,7 +29,9 @@
         study is to create a free virtual machine on Google Cloud Platform and build a simple web site
         that outputs all the information from the request headers.</p>
 
-    <p>Here are the request headers</p>
+    <p>Well here are the request headers:</p>
+
+
 
 </body>
 
